@@ -22,3 +22,9 @@ envVarGroups:
     generateValue: true
   - key: MYSQL_ROOT_PASSWORD
     generateValue: true
+  - key: MYSQL_BACKUP_DIR
+    value: /var/lib/mysql/backups  # Define the backup directory
+  - key: MYSQL_BACKUP_CRON_SCHEDULE
+    value: "0 0 * * *"  # Example: Cron schedule for daily backups at midnight
+
+# Optionally, you can add a backup script in a `docker-entrypoint.sh` to handle the backup process.
