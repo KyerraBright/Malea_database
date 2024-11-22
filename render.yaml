@@ -10,7 +10,6 @@ services:
     sizeGB: 10
   envVars:
   - fromGroup: mysql
-  ports: 3306
 
 envVarGroups:
 - name: mysql
